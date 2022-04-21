@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+  <h2> Detail Categories</h2>
+<div class="card mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h6> Category name: <br> <%= render @category %></h5>
+    <h6> Created at: <br> <%= @category.created_at %></h6>
+  </div>
+</div>
+  <div class="mb-3">
+    <%= link_to "Back to categories", categories_path, class: "btn btn-primary" %>
+    <%= link_to "Edit this category", edit_category_path(@category), class: "btn btn-success" %>
+  </div>
+  <%= button_to "Destroy this category", @category, method: :delete %>
