@@ -1,25 +1,23 @@
-# Rails on Replit
+# GIGIH Restaurant
+This is a final project from Generasi GIGIH 2.0 Back-end track, build an web app fullstack using Ruby and web framework Ruby on Rails. This project should be manage a restaurant with in can add category, add menu, and related features about ordering food.
 
-This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
+# Project spec
+* Rails version 7.0.2.3
+* ruby 3.0.3p157 (2021-11-24) [x86_64-linux]
+* sqlite3
 
-This template was generated using `rails new` (after you install the `rails` gem from the packager sidebar) so you can always do that if you prefer to set it up from scratch. The only had two make config changes we had to make to run it on Replit:
+## Getting Started
+### Steps to run this locally or on Replit
+```bash
+# install the required libraries and depenencies
+$ bundle install
 
-- bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
-- allow `*.repl.co` hosts (see `config/environments/development.rb`)
-- allow the app to be iframed on `replit.com` (see `config/application.rb`)
+# run the database migrations
+$ rails db:migrate
 
-## Running the app
+# start the local server
+$ rails server or bin/rails s
+```
 
-Simple hit run! You can edit the run command from the `.replit` file.
-
-## Running commands
-
-Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
-
-## Database
-
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
-
-## Help
-
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Alternatively you can [ask in the community](https://replit.com/talk/ask). Feel free to report bugs [here](https://replit.com/bugs) and give us feedback [here](https://Replit/feedback).
+## ERD Design Database
+![Project's ERD](erd_design_gigih_restaurant.png)
