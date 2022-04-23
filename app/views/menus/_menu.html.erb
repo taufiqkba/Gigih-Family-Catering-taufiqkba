@@ -1,17 +1,13 @@
 <div id="<%= dom_id menu %>">
-  <p>
-    <strong>Name:</strong>
-    <%= menu.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= menu.description %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= menu.price %>
-  </p>
+  <div class="card my-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= menu.name %></h5>
+      <h5 class="card-title text-success"><%= menu.price %></h5>
+      <p class="card-text"><%= menu.description %></p>
+      <%= link_to "Detail Menu", menu, class:"btn btn-secondary btn-sm" %>
+    </div>
+  </div>
+  
 
 </div>
+

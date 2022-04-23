@@ -1,10 +1,19 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @menu %>
+<div class="container-fluid py-5 px-5">
+	<table>	
+		<%= render @menu %>
+	</table>
+  <div class="card" style="width: 18rem;">
+    <div class="card-header">
+    Category
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= render @menu.categories%></li>
+  </ul>
+</div>
+</div>
+<%= link_to "Back to menus", menus_path %>
 
 <div>
   <%= link_to "Edit this menu", edit_menu_path(@menu) %> |
-  <%= link_to "Back to menus", menus_path %>
-
   <%= button_to "Destroy this menu", @menu, method: :delete %>
 </div>
